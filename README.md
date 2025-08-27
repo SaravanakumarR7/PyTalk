@@ -1,14 +1,14 @@
-PyTalk
+PyTalk:
 
     PyTalk is a terminal-based Python chat application that allows two users to communicate in real-time using TCP sockets. It demonstrates Python’s socket programming, threading, and asynchronous input handling with prompt_toolkit.
 
-Installation
+Installation:
 
     Make sure you have Python 3 installed on your system.
     
     Install the required Python package using pip:
 
-            pip install prompt_toolkit
+        "pip install prompt_toolkit"
 
 
     This installs prompt_toolkit, which is used for asynchronous input/output in the terminal chat.
