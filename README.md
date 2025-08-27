@@ -8,8 +8,7 @@ Installation:
     
     Install the required Python package using pip:
 
-**        "pip install prompt_toolkit"
-**
+**        "pip install prompt_toolkit"        **
 
     This installs prompt_toolkit, which is used for asynchronous input/output in the terminal chat.
 Features:
