@@ -11,7 +11,7 @@ def receive_msg(client,session):
             if data.lower() == "exit":
                 session.app.print_text("\n Client Disconnected from the Server")
                 break
-            print("\n Server : ",data)
+            session.app.print_text(f"\n Server : {data}")
         except:
             break
     
@@ -36,4 +36,5 @@ try:
 
 finally:
     client.close()
+
     print("\n Client Closed the Socket")
