@@ -9,9 +9,9 @@ def receive_msg(client,session):
         try:
             data = client.recv(1024).decode()
             if data.lower() == "exit":
-                print("\n Client Disconnected from the Server")
+                session.app.print_text("\n Client Disconnected from the Server")
                 break
-            print("\n Client : ", data)
+            session.app.print_text(f"\n Client :  {data}")
         except:
             break
 
@@ -29,7 +29,7 @@ try:
         while 1:
             msg = session.prompt("You : ")
             if msg.lower() == "exit":
-                print("\n Server Terminated the Connection")
+                session.app.print_text("\n Server Terminated the Connection")
                 break
             try:
                 client.sendall(msg.encode())
@@ -39,4 +39,5 @@ finally:
     client.close()
     print("Client Socket Closed")
     server.close()
+
     print("Server Socket Closed")
